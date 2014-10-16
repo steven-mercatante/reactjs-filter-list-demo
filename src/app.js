@@ -29,11 +29,8 @@ var FilterBtn = React.createClass({
 	render: function() {
 		var className = "btn btn-" + (this.state.active ? 'success' : 'default');
 		return (
-			<button 
-				id={this.props.id} 
-				className={className}
-				onClick={this.handleClick}>
-					{this.props.name}
+			<button id={this.props.id} className={className} onClick={this.handleClick}>
+				{this.props.name}
 			</button>
 		);
 	}
